@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- links externos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Condensed:wght@300;500;600&family=Roboto+Mono:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+
+
+    <!-- links internos -->
+    <link rel="icon" href="./img/icons8-criptografia-64.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Decodificador</title>
+</head>
+
+<body>
+    <header class="container">
+        <nav class="container-logo">
+            <a href="./index.html"><img src="./img/icons8-criptografia-64.png" alt="Logo"></a>
+        </nav>
+        <div class="container-title">
+            <h1 class="main-title">DECODIFICADOR-WEB</h1>
+        </div>
+    </header>
+
+
+    <main>
+
+        <div class="container-main">
+
+            <div class="container-input">
+                <div class="input-icon">
+                    <textarea id="input-msn" placeholder="Digite seu texto aqui.."></textarea>
+                </div>
+            </div>
+
+
+            <div id="container-output">
+                <img class="container-output-img" src="./img/firewall-2.png" alt="">
+                <h2>Nenhuma mensagem encontrada.</h2>
+                <p>Digite um texto que você deseja Criptografar ou Descriptografar.</p>
+            </div>
+
+        </div>
+
+
+
+        <div class="container-btn">
+            <p>Apenas letras Maiúsculas e sem acento.</p>
+            <div class="btn">
+                <button onclick="criptografar()" class="btn-button">Criptografar</button>
+                <button onclick="descriptografar()" class="btn-button">Descriptografar</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="container-footer">
+
+        <div class="container-footer-main">
+            <a href="https://github.com/cruzmenezes/GitHub" target="_blank"><img class="container-footer-main-icon"
+                    src="./img/github-removebg-preview.png" alt=""></a>
+            <a href="https://www.youtube.com/channel/UCbbV8LCZ1RfeWZ6riWbqSMg" target="_blank"><img
+                    class="container-footer-main-icon" src="./img/youtube.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/edsonvictormenezes-ba298a34" target="_blank"><img
+                    class="container-footer-main-icon" src="./img/linkedin.png" alt=""></a>
+            <a href="https://www.instagram.com/" target="_blank"> <img class="container-footer-main-icon"
+                    src="./img/instagram.png" alt=""></a>
+        </div>
+        <div class="container-footer-main-copy">
+            <span class="container-footer-copy">&#169; 2023 Copyright: Edson_Menezes</span>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

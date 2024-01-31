@@ -1,0 +1,259 @@
+
+/* font */
+
+/* variaveis */
+:root {
+    --color-principal: #F8EDFF;
+    --color-secundario: #525CEB;
+    --color-terceario:#3D3B40;
+    --color-quart:#BFCFE7;
+    --color-quint:rgba(0, 0, 0, 0.05);
+}
+
+/* fim */
+
+
+* {
+    
+    background: #F8EDFF;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container-main {
+    display: flex;
+    align-items: baseline;
+    justify-content:space-between ;
+    padding: 2% 0 0 4%;
+}
+
+.container-logo {
+    padding: 1rem;
+
+}
+
+
+.container-title {
+    color: var(--color-secundario);
+    
+}
+
+
+.main-title {
+    text-align: center;
+    font-size: 1.875rem;
+    font-weight: 600;    
+}
+
+
+
+.container-input-input {
+    width: 25rem;
+    height: 20.625rem;
+    
+}
+
+
+#input-msn {
+    width: 21.563rem;
+    height: 20.625rem;
+    font-size: 1.25rem;
+    color: var(--color-terceario);
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    resize: none;
+    outline: 0;
+    padding: 10px;
+    text-transform: uppercase;
+    opacity: 80%;
+}
+
+.input-icon-img {
+    width: 1.875rem;
+    height: 1.875rem;
+    margin: 1.25rem;
+}
+
+.input-msn {
+    padding: 0.625rem;
+}
+
+#container-output {
+    display: flex;
+    flex-direction: column;
+    border: 0.063rem solid var(--color-terceario);
+    border-radius: 10px;
+    width: 400px;
+    height: 450px;
+    margin-right: 5%; 
+    
+}
+
+#container-output h2 {
+    text-align: center;
+    font-size: 28px;
+    padding-bottom: 5px;
+    color: var(--color-terceario);
+}
+
+#container-output p {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+
+
+.container-output-img {
+    max-width: 300px;
+    max-height: 300px;    
+    width: auto;
+    height: auto;
+    margin-top: 6px;
+    margin-left: 18px;
+    
+}
+
+.btn {
+    
+    margin-bottom: 30px;
+
+}
+
+.container-btn p {
+    margin-left: 60px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    color: var(--color-terceario);
+}
+
+.btn .btn-button {
+    background-color: var(--color-secundario);
+    border: 1px solid var(--color-secundario);  
+    border-radius: 15px;  
+    text-decoration: none;
+    color: var(--color-terceario);
+    font-size: 20px;
+    width: 328px;
+    height: 50px;
+    margin-left: 4%;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+    cursor: pointer;
+
+}
+
+.container-footer-main-copy {
+    width: 100%;
+    background-color: var(--color-quint);    
+    padding: 1.25rem;
+    text-align: center;
+}
+
+.container-footer-copy {
+    background-color: transparent;
+    color: var(--color-secundario);    
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+
+.container-footer-main {
+    background-color: transparent;
+    margin-top:0.625rem;
+    margin-bottom: 0.625rem;
+    padding: 5px;   
+    display: flex;
+    justify-content: center;
+    gap: 2.188rem;
+}
+
+.container-footer-main .container-footer-main-icon {
+    width: 2.063rem;
+    height: 2.063rem;
+    cursor: pointer;
+    margin-top: 5px;
+    padding: auto;
+    background-color: transparent;
+
+}
+
+.container-footer-main a {
+    background-color: transparent;
+}
+
+
+#copiar.ntn-copiar {
+    border: 2px solid var(--color-secundario);
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    background-color: var(--color-secundario);
+    width: 150px;
+    height: 50px;
+    margin-left: 30%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    margin-top: 80%;
+}
+
+#copiar.ntn-copiar p {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+
+@media (max-width: 600px) {
+    .container-logo {
+        display: none;
+    }
+    
+    .container-title {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .main {
+        display: flex;
+    }
+
+    .container-main {
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    
+    .btn {
+        display: flex;
+        flex-direction: column;   
+        
+        gap: 30px;
+
+    }
+
+
+    .container-btn p {
+        display: none;
+    }
+}
